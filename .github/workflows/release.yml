@@ -7,7 +7,7 @@ on:
 
 jobs:
   consumer-gateway:
-    runs-on: ubuntu-latest
+    runs-on: actuated
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -34,7 +34,7 @@ jobs:
           ARGS='--no-cache' exec bash push_production.sh
 
   skipper:
-    runs-on: ubuntu-latest
+    runs-on: actuated
     steps:
 
       - name: Checkout code
